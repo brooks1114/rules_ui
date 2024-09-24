@@ -1,0 +1,53 @@
+[
+    {
+        "businessRuleId": "1",
+        "given": [
+            {
+                "1": {
+                    "location": "Location A",
+                    "locator": "Locator A",
+                    "action": "Action A",
+                    "value": "Value A"
+                },
+                "2": {
+                    "location": "Location 2A",
+                    "locator": "Locator 2A",
+                    "action": "Action 2A",
+                    "value": "Value 2A"
+                }
+            }
+        ],
+        "when": [
+            {
+                "1": {
+                    "location": "Location B",
+                    "locator": "Locator B",
+                    "action": "Action B",
+                    "value": "Value B"
+                },
+                "2": {
+                    "location": "Location 2B",
+                    "locator": "Locator 2B",
+                    "action": "Action 2B",
+                    "value": "Value 2B"
+                }
+            }
+        ],
+        "then": [
+            {
+                "1": {
+                    "location": "Location C",
+                    "locator": "Locator C",
+                    "action": "Action C",
+                    "value": "Value C"
+                },
+                "2": {
+                    "location": "Location 2B",
+                    "locator": "Locator 2B",
+                    "action": "Action 2B",
+                    "value": "Value 2B"
+                }
+            }
+        ]
+    }
+]

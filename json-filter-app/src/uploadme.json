@@ -1,53 +1,112 @@
 [
     {
         "businessRuleId": "1",
-        "given": [
-            {
-                "1": {
-                    "location": "Location A",
-                    "locator": "Locator A",
-                    "action": "Action A",
-                    "value": "Value A"
-                },
-                "2": {
-                    "location": "Location 2A",
-                    "locator": "Locator 2A",
-                    "action": "Action 2A",
-                    "value": "Value 2A"
-                }
+        "given": {
+            "1": {
+                "location": "Location 5A",
+                "locator": "D",
+                "actor": "USER",
+                "action": "Action A3",
+                "value": "Value 3A"
+            },
+            "2": {
+                "location": "Location 2A",
+                "locator": "F",
+                "actor": "SYSTEM",
+                "action": "Action 24A",
+                "value": "Value 2A"
+            },
+            "3": {
+                "location": "Location 27A",
+                "locator": "F",
+                "action": "Action 2A",
+                "value": "Value 2A"
+            },
+            "45": {
+                "location": "Location 52A",
+                "locator": "F",
+                "action": "Action 24A",
+                "value": "Value 27A"
             }
-        ],
-        "when": [
-            {
-                "1": {
-                    "location": "Location B",
-                    "locator": "Locator B",
-                    "action": "Action B",
-                    "value": "Value B"
-                },
-                "2": {
-                    "location": "Location 2B",
-                    "locator": "Locator 2B",
-                    "action": "Action 2B",
-                    "value": "Value 2B"
-                }
+        },
+        "when": {
+            "1": {
+                "location": "Location B",
+                "locator": "Locator 6B",
+                "action": "Action 4",
+                "value": "Value 3B"
             }
-        ],
-        "then": [
-            {
-                "1": {
-                    "location": "Location C",
-                    "locator": "Locator C",
-                    "action": "Action C",
-                    "value": "Value C"
-                },
-                "2": {
-                    "location": "Location 2B",
-                    "locator": "Locator 2B",
-                    "action": "Action 2B",
-                    "value": "Value 2B"
-                }
+        },
+        "then": {
+            "1": {
+                "location": "Location C3",
+                "locator": "Locator 4C",
+                "action": "Action C5",
+                "value": "Value 3C"
+            },
+            "2": {
+                "location": "Location 32B",
+                "locator": "Locator 2B",
+                "action": "Action 24B",
+                "value": "Value 22B"
+            },
+            "3": {
+                "location": "Location 32B",
+                "locator": "Locator 2B",
+                "action": "Action 24B",
+                "value": "Value 22B"
+            },
+            "4": {
+                "location": "Location 32B",
+                "locator": "Locator 2B",
+                "action": "Action 24B",
+                "value": "Value 22B"
             }
-        ]
+        }
+    },
+    {
+        "businessRuleId": "2",
+        "given": {
+            "1": {
+                "location": "Location 5A234",
+                "locator": "Locator 53A",
+                "action": "Action 4432A",
+                "value": "Value 334A"
+            },
+            "2": {
+                "location": "Location 24A",
+                "locator": "Locator 2432A",
+                "action": "Action 2432A",
+                "value": "Value 2432A"
+            }
+        },
+        "when": {
+            "1": {
+                "location": "Location 34B",
+                "locator": "Locator B34",
+                "action": "Action B43",
+                "value": "Value 443B"
+            },
+            "2": {
+                "location": "Location 432B",
+                "locator": "Locator 26B",
+                "action": "Action 253B",
+                "value": "Value 243B"
+            }
+        },
+        "then": {
+            "1": {
+                "location": "Location 345C",
+                "locator": "Locator C345",
+                "action": "Action 345C",
+                "value": "Value 345C"
+            },
+            "2": {
+                "location": "Location 3452B",
+                "locator": "Locator 25B",
+                "action": "Action 2543B",
+                "value": "Value 3452B"
+            }
+        }
     }
 ]

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
 
 function BusinessRulesDictionary() {
     const [jsonData, setJsonData] = useState(null);
@@ -143,10 +142,13 @@ function BusinessRulesDictionary() {
                         <thead>
                             <tr>
                                 {visibleColumns.map((colName) => (
-                                    <th key={colName} style={{ whiteSpace: 'nowrap', minWidth: '150px' }}>
-                                        {colName === 'businessRuleId' ? (
-                                            // Add a text input for the businessRuleId filter
-                                            <div>
+                                    <th key={colName} style={{ whiteSpace: 'nowrap', minWidth: '150px', textAlign: 'center' }}>
+                                        <div style={{ marginBottom: '10px' }}>
+                                            <span>{colName}</span> {/* Display the property name from JSON */}
+                                        </div>
+                                        <div>
+                                            {colName === 'businessRuleId' ? (
+                                                // Add a text input for the businessRuleId filter
                                                 <input
                                                     type="text"
                                                     name={colName}
@@ -154,10 +156,8 @@ function BusinessRulesDictionary() {
                                                     onChange={handleFilterChange}
                                                     style={{ width: '100%' }}
                                                 />
-                                            </div>
-                                        ) : (
-                                            // Dropdown for other columns
-                                            <div>
+                                            ) : (
+                                                // Dropdown for other columns
                                                 <select name={colName} onChange={handleFilterChange} style={{ width: '100%' }}>
                                                     <option value="All">All</option>
                                                     {getUniqueValues(jsonData, colName).map((value) => (
@@ -166,8 +166,8 @@ function BusinessRulesDictionary() {
                                                         </option>
                                                     ))}
                                                 </select>
-                                            </div>
-                                        )}
+                                            )}
+                                        </div>
                                     </th>
                                 ))}
                             </tr>
